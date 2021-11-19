@@ -8,7 +8,7 @@ public class FerragnezSecurity {
 		// TODO Auto-generated method stub
 		Scanner scan=new Scanner(System.in);
 		
-		String[] listaInvitati= {"dua Lipa", "paris Hilton", "manuel agnelli", "j-ax", "francesco totti", "ilary blasi", "bebe vio", "luis", "pardis zarei", "martina maccherone", "rachel zeilic"};
+		String[] listaInvitati= {"dua lipa", "paris hilton", "manuel agnelli", "j-ax", "francesco totti", "ilary blasi", "bebe vio", "luis", "pardis zarei", "martina maccherone", "rachel zeilic"};
 		
 		boolean trovato=false;
 		
@@ -16,12 +16,12 @@ public class FerragnezSecurity {
 		
 		System.out.println("Buona sera, Nome e Cognome, prego: ");
 		invitato=scan.nextLine();
-		invitato.toLowerCase();
+		invitato=invitato.toLowerCase();
 		
 		
 		for(int i=0; i<listaInvitati.length; i++) {
 			
-			if(listaInvitati[i].equals(invitato)) {
+			if(invitato.equals(listaInvitati[i])) {
 				
 				trovato=true;
 				System.out.println("Benvenuta/o alla festa dei Ferragnez");
